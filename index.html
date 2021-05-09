@@ -10,18 +10,69 @@
         margin:250px;
         font-size:65px;
       }
+      .top {
+        animation-name: blur;
+        animation-duration:5s;
+      }
+      @keyframes blur {
+        from {
+          opacity:0;
+        }
+        to {
+          opacity:1;
+        }
+      }
+      /*.under {
+        animation-name: fadeIn;
+        animation-duration: 3s;
+        }
+        @keyframes fadeIn {
+          from {
+            opacity:0;
+          }
+          to {
+            opacity:1;
+          }
+        }*/
+      a {
+        color: white;
+        text-decoration: none;
+        border-style:ridge;
+        border-left:none;
+        border-right:none;
+        padding-top: 25px;
+        padding-bottom:25px;
+        animation-name:fadeIn;
+        animation-duration: 5s;
+        }
+      @keyframes fadeIn {
+        0% {
+          opacity:0;
+        }
+        43% {
+          opacity: 0;
+        }
+        100% {
+          opacity:1;
+        }
+      }
+      a:hover {
+        color: #FAA6BD;
+      }
+
       body {
-        background-image:url('약간작은축하.jpg');
+        background-image:url('chot.jpg');
         text-align:center;
-        color:white; font-size:35px;
+        font-size:35px;color:white
       }
 
       </style>
 </head>
 
 <body>
-  <h1>다영아 생일 겁나 축하한다 ! </h1>
-  <p style="margin-top:450px">그녀의 27번째 생일, 아름다운 날입니다.</p>
+  <h1 class="top">다영아, 생일 겁나 축하한다 !</h1>
+  <a href="index2.html">그녀에 대해 알아보기</a>
+  <p style="margin-top:200px">그녀의 27번째 생일, 아름다운 날입니다.</p>
 </body>
 
 
